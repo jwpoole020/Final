@@ -81,6 +81,7 @@ public class Final extends AppCompatActivity {
             imageBG.setImageDrawable(tileBG);
         else if(i==3)
             imageBG.setImageDrawable(wood);
+        
     }
 
     public void updateTable(int i){

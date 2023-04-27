@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class Floor extends AppCompatActivity {
+public class floor extends AppCompatActivity {
 
     ImageButton buttonRed;
     ImageButton buttonCar;

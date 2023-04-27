@@ -1,67 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Floor">
+    tools:context=".floor">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Floor Plan"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:text="Flooring"
+      android:textSize="24sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/buttonRed"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/redtile" />
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Choose your flooring"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <ImageButton
-        android:id="@+id/buttonCar"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/buttonRed"
-        app:srcCompat="@drawable/carpet" />
+  <ImageButton
+      android:id="@+id/buttonRed"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="100dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView4"
+      app:srcCompat="@drawable/redtile" />
 
-    <ImageButton
-        android:id="@+id/buttonBW"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="200dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bwtile" />
+  <ImageButton
+      android:id="@+id/buttonBW"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_marginEnd="32dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/buttonRed"
+      app:srcCompat="@drawable/bwtile" />
 
-    <ImageButton
-        android:id="@+id/buttonWood"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/buttonBW"
-        app:srcCompat="@drawable/wood" />
+  <ImageButton
+      android:id="@+id/buttonCar"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="100dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/buttonRed"
+      app:srcCompat="@drawable/carpet1" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Choose your floor plan."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+  <ImageButton
+      android:id="@+id/buttonWood"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_marginEnd="32dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/buttonCar"
+      app:srcCompat="@drawable/wood1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,8 +15,12 @@ public class Final extends AppCompatActivity {
     ImageView imageBG;
     ImageView imageTable;
     ImageView imageTable2;
+    ImageView imageTable3;
+    ImageView imageTable4;
     ImageView imagePizza;
     ImageView imagePizza2;
+    ImageView imagePizza3;
+    ImageView imagePizza4;
     Button buttonSO;
     int floor;
     int table;
@@ -44,10 +48,10 @@ public class Final extends AppCompatActivity {
         imagePizza2=findViewById(R.id.imagePizza2);
         buttonSO=findViewById(R.id.buttonSO);
 
-        tileRed=getDrawable(R.drawable.redtile);
+        tileRed=getDrawable(R.drawable.redtilefinal);
         tileBG=getDrawable(R.drawable.bwtile);
-        carpet=getDrawable(R.drawable.carpet1);
-        wood=getDrawable(R.drawable.wood1);
+        carpet=getDrawable(R.drawable.greencarpet);
+        wood=getDrawable(R.drawable.woodfinal);
         booth=getDrawable(R.drawable.thumbnail_booth);
         tableCH=getDrawable(R.drawable.roundtable);
         cheese=getDrawable(R.drawable.thumbnail_cheesepizza);
@@ -93,45 +97,74 @@ public class Final extends AppCompatActivity {
         if(i==0) {
             imageTable.setImageDrawable(tableCH);
             imageTable2.setImageDrawable(tableCH);
+            imageTable3.setImageDrawable(tableCH);
+            imageTable4.setImageDrawable(tableCH);
         }
         else if(i==1) {
             imageTable.setImageDrawable(booth);
             imageTable2.setImageDrawable(booth);
+            imageTable3.setImageDrawable(booth);
+            imageTable4.setImageDrawable(booth);
         }
-        imageTable.setMinimumHeight(300);
-        imageTable.setMaxHeight(300);
-        imageTable.setMinimumWidth(300);
-        imageTable.setMaxWidth(300);
-        imageTable2.setMinimumHeight(300);
-        imageTable2.setMaxHeight(300);
-        imageTable2.setMinimumWidth(300);
-        imageTable2.setMaxWidth(300);
+        imageTable.setMinimumHeight(200);
+        imageTable.setMaxHeight(200);
+        imageTable.setMinimumWidth(200);
+        imageTable.setMaxWidth(200);
+        imageTable2.setMinimumHeight(200);
+        imageTable2.setMaxHeight(200);
+        imageTable2.setMinimumWidth(200);
+        imageTable2.setMaxWidth(200);
+        imageTable3.setMinimumHeight(200);
+        imageTable3.setMaxHeight(200);
+        imageTable3.setMinimumWidth(200);
+        imageTable3.setMaxWidth(200);
+        imageTable4.setMinimumHeight(200);
+        imageTable4.setMaxHeight(200);
+        imageTable4.setMinimumWidth(200);
+        imageTable4.setMaxWidth(200);
     }
 
     public void updatePizza(int i){
         if(i==0) {
             imagePizza.setImageDrawable(cheese);
             imagePizza2.setImageDrawable(cheese);
+            imagePizza3.setImageDrawable(cheese);
+            imagePizza4.setImageDrawable(cheese);
         }
         else if(i==1) {
             imagePizza.setImageDrawable(pep);
             imagePizza2.setImageDrawable(pep);
+            imagePizza3.setImageDrawable(pep);
+            imagePizza4.setImageDrawable(pep);
         }
         else if(i==2) {
             imagePizza.setImageDrawable(loaded);
             imagePizza2.setImageDrawable(loaded);
+            imagePizza3.setImageDrawable(loaded);
+            imagePizza4.setImageDrawable(loaded);
         }
         else if(i==3) {
             imagePizza.setImageDrawable(pine);
             imagePizza2.setImageDrawable(pine);
+            imagePizza3.setImageDrawable(pine);
+            imagePizza4.setImageDrawable(pine);
         }
-        imagePizza.setMaxWidth(75);
-        imagePizza.setMinimumWidth(75);
-        imagePizza.setMaxHeight(75);
-        imagePizza.setMinimumHeight(75);
-        imagePizza2.setMaxWidth(75);
-        imagePizza2.setMinimumWidth(75);
-        imagePizza2.setMaxHeight(75);
-        imagePizza2.setMinimumHeight(75);
+        imagePizza.setMaxWidth(50);
+        imagePizza.setMinimumWidth(50);
+        imagePizza.setMaxHeight(50);
+        imagePizza.setMinimumHeight(50);
+        imagePizza2.setMaxWidth(50);
+        imagePizza2.setMinimumWidth(50);
+        imagePizza2.setMaxHeight(50);
+        imagePizza2.setMinimumHeight(50);
+        imagePizza3.setMaxWidth(50);
+        imagePizza3.setMinimumWidth(50);
+        imagePizza3.setMaxHeight(50);
+        imagePizza3.setMinimumHeight(50);
+        imagePizza4.setMaxWidth(50);
+        imagePizza4.setMinimumWidth(50);
+        imagePizza4.setMaxHeight(50);
+        imagePizza4.setMinimumHeight(50);
+
     }
 }

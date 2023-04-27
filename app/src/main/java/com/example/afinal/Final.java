@@ -14,7 +14,9 @@ public class Final extends AppCompatActivity {
 
     ImageView imageBG;
     ImageView imageTable;
+    ImageView imageTable2;
     ImageView imagePizza;
+    ImageView imagePizza2;
     Button buttonSO;
     int floor;
     int table;
@@ -38,17 +40,20 @@ public class Final extends AppCompatActivity {
         imageBG=findViewById(R.id.imageBG);
         imageTable=findViewById(R.id.imageTable);
         imagePizza=findViewById(R.id.imagePizza);
+        imageTable2=findViewById(R.id.imageTable2);
+        imagePizza2=findViewById(R.id.imagePizza2);
         buttonSO=findViewById(R.id.buttonSO);
+
         tileRed=getDrawable(R.drawable.redtile);
         tileBG=getDrawable(R.drawable.bwtile);
-        carpet=getDrawable(R.drawable.carpet);
-        wood=getDrawable(R.drawable.wood);
-        booth=getDrawable(R.drawable.booth);
-        tableCH=getDrawable(R.drawable.circle4);
-        cheese=getDrawable(R.drawable.cheese);
-        pep=getDrawable(R.drawable.pepper);
-        loaded=getDrawable(R.drawable.loaded);
-        pine=getDrawable(R.drawable.pine);
+        carpet=getDrawable(R.drawable.carpet1);
+        wood=getDrawable(R.drawable.wood1);
+        booth=getDrawable(R.drawable.thumbnail_booth);
+        tableCH=getDrawable(R.drawable.roundtable);
+        cheese=getDrawable(R.drawable.thumbnail_cheesepizza);
+        pep=getDrawable(R.drawable.thumbnail_peppizza);
+        loaded=getDrawable(R.drawable.thumbnail_loaded);
+        pine=getDrawable(R.drawable.thumbnail_pineapple);
 
         buttonSO.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,20 +90,48 @@ public class Final extends AppCompatActivity {
     }
 
     public void updateTable(int i){
-        if(i==0)
+        if(i==0) {
             imageTable.setImageDrawable(tableCH);
-        else if(i==1)
+            imageTable2.setImageDrawable(tableCH);
+        }
+        else if(i==1) {
             imageTable.setImageDrawable(booth);
+            imageTable2.setImageDrawable(booth);
+        }
+        imageTable.setMinimumHeight(300);
+        imageTable.setMaxHeight(300);
+        imageTable.setMinimumWidth(300);
+        imageTable.setMaxWidth(300);
+        imageTable2.setMinimumHeight(300);
+        imageTable2.setMaxHeight(300);
+        imageTable2.setMinimumWidth(300);
+        imageTable2.setMaxWidth(300);
     }
 
     public void updatePizza(int i){
-        if(i==0)
+        if(i==0) {
             imagePizza.setImageDrawable(cheese);
-        else if(i==1)
+            imagePizza2.setImageDrawable(cheese);
+        }
+        else if(i==1) {
             imagePizza.setImageDrawable(pep);
-        else if(i==2)
+            imagePizza2.setImageDrawable(pep);
+        }
+        else if(i==2) {
             imagePizza.setImageDrawable(loaded);
-        else if(i==3)
+            imagePizza2.setImageDrawable(loaded);
+        }
+        else if(i==3) {
             imagePizza.setImageDrawable(pine);
+            imagePizza2.setImageDrawable(pine);
+        }
+        imagePizza.setMaxWidth(75);
+        imagePizza.setMinimumWidth(75);
+        imagePizza.setMaxHeight(75);
+        imagePizza.setMinimumHeight(75);
+        imagePizza2.setMaxWidth(75);
+        imagePizza2.setMinimumWidth(75);
+        imagePizza2.setMaxHeight(75);
+        imagePizza2.setMinimumHeight(75);
     }
 }

@@ -67,8 +67,6 @@ public class Final extends AppCompatActivity {
             }
         });
         updatePizzeria();
-
-
     }
 
     public void updatePizzeria(){

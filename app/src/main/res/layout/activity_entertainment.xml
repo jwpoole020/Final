@@ -27,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imageMachine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -37,25 +37,25 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imageArcade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageBP"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/imageAni"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageMachine"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imageBP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -67,75 +67,72 @@
         android:id="@+id/groupMachine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7">
+        app:layout_constraintStart_toStartOf="@+id/imageMachine"
+        app:layout_constraintTop_toBottomOf="@+id/imageMachine">
 
         <RadioButton
             android:id="@+id/radioButton26"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="None" />
 
         <RadioButton
             android:id="@+id/radioButton27"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Hoops" />
 
         <RadioButton
             android:id="@+id/radioButton28"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Ski-Ball" />
 
         <RadioButton
             android:id="@+id/radioButton29"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Target Practice" />
     </RadioGroup>
 
     <RadioGroup
         android:id="@+id/groupAni"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9">
+        app:layout_constraintStart_toStartOf="@+id/imageAni"
+        app:layout_constraintTop_toBottomOf="@+id/imageAni">
 
         <RadioButton
             android:id="@+id/radioButton30"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="None" />
 
         <RadioButton
             android:id="@+id/radioButton31"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Mr. Bear" />
 
         <RadioButton
             android:id="@+id/radioButton32"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Mr. Rabbit" />
 
         <RadioButton
             android:id="@+id/radioButton33"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Ms. Bird" />
     </RadioGroup>
 
     <RadioGroup
         android:id="@+id/groupBP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10">
+        app:layout_constraintStart_toStartOf="@+id/imageBP"
+        app:layout_constraintTop_toBottomOf="@+id/imageBP">
 
         <RadioButton
             android:id="@+id/radioButton34"
@@ -166,9 +163,8 @@
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8">
+        app:layout_constraintStart_toStartOf="@+id/imageArcade"
+        app:layout_constraintTop_toBottomOf="@+id/imageArcade">
 
         <RadioButton
             android:id="@+id/radioButton38"

@@ -6,6 +6,8 @@ import android.os.Bundle;
 
 public class Entertainment extends AppCompatActivity {
 
+    ImageView
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

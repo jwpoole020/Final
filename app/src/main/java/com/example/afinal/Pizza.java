@@ -11,10 +11,10 @@ import android.widget.ImageButton;
 
 public class Pizza extends AppCompatActivity {
 
-    ImageButton buttonCheese;
-    ImageButton buttonPep;
-    ImageButton buttonLoaded;
-    ImageButton buttonPine;
+    Button buttonCheese;
+    Button buttonPep;
+    Button buttonLoaded;
+    Button buttonPine;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

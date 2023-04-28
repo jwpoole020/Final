@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
         tools:srcCompat="@tools:sample/avatars" />
@@ -71,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageMachine">
 
         <RadioButton
-            android:id="@+id/radioButton26"
+            android:id="@+id/radioNone1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="None" />
@@ -138,29 +138,30 @@
             android:id="@+id/radioButton34"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="None" />
 
         <RadioButton
             android:id="@+id/radioButton35"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Circle" />
 
         <RadioButton
             android:id="@+id/radioButton36"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Square" />
 
         <RadioButton
             android:id="@+id/radioButton37"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Empty" />
 
     </RadioGroup>
 
     <RadioGroup
+        android:id="@+id/groupArcade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@+id/imageArcade"
@@ -170,25 +171,25 @@
             android:id="@+id/radioButton38"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="None" />
 
         <RadioButton
             android:id="@+id/radioButton39"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Red" />
 
         <RadioButton
             android:id="@+id/radioButton40"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Blue" />
 
         <RadioButton
             android:id="@+id/radioButton41"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Green" />
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

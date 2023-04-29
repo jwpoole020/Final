@@ -2,6 +2,8 @@ package com.example.afinal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.DashPathEffect;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -33,6 +35,19 @@ public class Entertainment extends AppCompatActivity {
     RadioButton radioBlue;
     RadioButton radioGreen;
     RadioButton radioNone4;
+    Drawable hoops;
+    Drawable skee;
+    Drawable tar;
+    Drawable trash;
+    Drawable vac;
+    Drawable wet;
+    Drawable cir;
+    Drawable square;
+    Drawable empty;
+    Drawable red;
+    Drawable blue;
+    Drawable green;
+    Drawable none;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +66,32 @@ public class Entertainment extends AppCompatActivity {
         radioSkee=findViewById(R.id.radioSkee);
         radioTar=findViewById(R.id.radioTar);
         radioNone1=findViewById(R.id.radioNone1);
+        radioTrash=findViewById(R.id.radioTrash);
+        radioVac=findViewById(R.id.radioVac);
+        radioWet=findViewById(R.id.radioWet);
+        radioNone2=findViewById(R.id.radioNone2);
+        radioCir=findViewById(R.id.radioCir);
+        radioSq=findViewById(R.id.radioSq);
+        radioEmpty=findViewById(R.id.radioEmpty);
+        radioNone3=findViewById(R.id.radioNone3);
+        radioRed=findViewById(R.id.radioRed);
+        radioBlue=findViewById(R.id.radioBlue);
+        radioGreen=findViewById(R.id.radioGreen);
+        radioNone4=findViewById(R.id.radioNone4);
 
+        hoops=getDrawable(R.drawable.basket);
+        skee=getDrawable(R.drawable.skii);
+        tar=getDrawable(R.drawable.untitled_1);
+        trash=getDrawable(R.drawable.trashcan);
+        vac=getDrawable(R.drawable.vacum);
+        wet=getDrawable(R.drawable.wetfloor);
+        cir=getDrawable(R.drawable.bpcircle);
+        square=getDrawable(R.drawable.bpsquare);
+        empty=getDrawable(R.drawable.bpempty);
+        red=getDrawable(R.drawable.arcred);
+        blue=getDrawable(R.drawable.arcblue);
+        green=getDrawable(R.drawable.arcgreen);
+        none=getDrawable(R.drawable.nothing);
 
 
     }

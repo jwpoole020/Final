@@ -13,10 +13,10 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/woodfinal" />
 
     <TextView
@@ -37,7 +37,7 @@
         android:id="@+id/imageTable2"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/roundtable" />
@@ -76,7 +76,7 @@
         android:id="@+id/imageTable3"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/roundtable" />
@@ -118,5 +118,43 @@
         app:layout_constraintStart_toStartOf="@+id/imageTable"
         app:layout_constraintTop_toTopOf="@+id/imageTable"
         app:srcCompat="@drawable/thumbnail_cheesepizza" />
+
+    <ImageView
+        android:id="@+id/machine"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/basket" />
+
+    <ImageView
+        android:id="@+id/misc"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageTable4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/trashcan" />
+
+    <ImageView
+        android:id="@+id/arcade"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arcred" />
+
+    <ImageView
+        android:id="@+id/ballpit"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/machine"
+        app:srcCompat="@drawable/bpcircle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

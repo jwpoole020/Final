@@ -29,7 +29,7 @@ public class Pizza extends AppCompatActivity {
         buttonCheese.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Final.class);
+                Intent i = new Intent(getApplicationContext(), Entertainment.class);
                 SharedPreferences sp = getSharedPreferences("shared", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sp.edit();
                 editor.putInt("pizza", 0);
@@ -41,7 +41,7 @@ public class Pizza extends AppCompatActivity {
         buttonPep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Final.class);
+                Intent i = new Intent(getApplicationContext(), Entertainment.class);
                 SharedPreferences sp = getSharedPreferences("shared", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sp.edit();
                 editor.putInt("pizza", 1);
@@ -53,7 +53,7 @@ public class Pizza extends AppCompatActivity {
         buttonLoaded.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Final.class);
+                Intent i = new Intent(getApplicationContext(), Entertainment.class);
                 SharedPreferences sp = getSharedPreferences("shared", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sp.edit();
                 editor.putInt("pizza", 2);
@@ -65,7 +65,7 @@ public class Pizza extends AppCompatActivity {
         buttonPine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Final.class);
+                Intent i = new Intent(getApplicationContext(), Entertainment.class);
                 SharedPreferences sp = getSharedPreferences("shared", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sp.edit();
                 editor.putInt("pizza", 3);

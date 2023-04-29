@@ -21,10 +21,18 @@ public class Final extends AppCompatActivity {
     ImageView imagePizza2;
     ImageView imagePizza3;
     ImageView imagePizza4;
+    ImageView machine;
+    ImageView arcade;
+    ImageView ballpit;
+    ImageView misc;
     Button buttonSO;
     int floor;
     int table;
     int pizza;
+    int mach;
+    int ball;
+    int mis;
+    int ar;
     Drawable tileRed;
     Drawable tileBG;
     Drawable carpet;
@@ -35,6 +43,19 @@ public class Final extends AppCompatActivity {
     Drawable pep;
     Drawable loaded;
     Drawable pine;
+    Drawable hoops;
+    Drawable skee;
+    Drawable tar;
+    Drawable trash;
+    Drawable vac;
+    Drawable wet;
+    Drawable cir;
+    Drawable square;
+    Drawable empty;
+    Drawable red;
+    Drawable blue;
+    Drawable green;
+    Drawable none;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +67,10 @@ public class Final extends AppCompatActivity {
         imagePizza=findViewById(R.id.imagePizza);
         imageTable2=findViewById(R.id.imageTable2);
         imagePizza2=findViewById(R.id.imagePizza2);
+        machine=findViewById(R.id.machine);
+        arcade=findViewById(R.id.arcade);
+        ballpit=findViewById(R.id.ballpit);
+        misc=findViewById(R.id.misc);
         buttonSO=findViewById(R.id.buttonSO);
 
         tileRed=getDrawable(R.drawable.redtilefinal);
@@ -58,6 +83,19 @@ public class Final extends AppCompatActivity {
         pep=getDrawable(R.drawable.thumbnail_peppizza);
         loaded=getDrawable(R.drawable.thumbnail_loaded);
         pine=getDrawable(R.drawable.thumbnail_pineapple);
+        hoops=getDrawable(R.drawable.basket);
+        skee=getDrawable(R.drawable.skii);
+        tar=getDrawable(R.drawable.untitled_1);
+        trash=getDrawable(R.drawable.trashcan);
+        vac=getDrawable(R.drawable.vacum);
+        wet=getDrawable(R.drawable.wetfloor);
+        cir=getDrawable(R.drawable.bpcircle);
+        square=getDrawable(R.drawable.bpsquare);
+        empty=getDrawable(R.drawable.bpempty);
+        red=getDrawable(R.drawable.arcred);
+        blue=getDrawable(R.drawable.arcblue);
+        green=getDrawable(R.drawable.arcgreen);
+        none=getDrawable(R.drawable.none);
 
         buttonSO.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,9 +112,14 @@ public class Final extends AppCompatActivity {
         floor = sp.getInt("floor", 0);
         table = sp.getInt("table", 0);
         pizza = sp.getInt("pizza", 0);
+        mach = sp.getInt("Machine", 0);
+        ball = sp.getInt("BP", 0);
+        mis = sp.getInt("Misc",0);
+        ar = sp.getInt("Arcade",0);
         updateBG(floor);
         updateTable(table);
         updatePizza(pizza);
+        updateEnter(mach, ball, ar, mis);
     }
 
     public void updateBG(int i){
@@ -164,5 +207,60 @@ public class Final extends AppCompatActivity {
         imagePizza4.setMaxHeight(50);
         imagePizza4.setMinimumHeight(50);
 
+    }
+
+    public void updateEnter(int m, int b, int a, int t){
+        if(m==0)
+            machine.setImageDrawable(hoops);
+        else if(m==1)
+            machine.setImageDrawable(skee);
+        else if(m==2)
+            machine.setImageDrawable(tar);
+        else if(m==3)
+            machine.setImageDrawable(none);
+
+        if(b==0)
+            ballpit.setImageDrawable(cir);
+        else if(b==1)
+            ballpit.setImageDrawable(square);
+        else if(b==2)
+            ballpit.setImageDrawable(empty);
+        else if(b==3)
+            ballpit.setImageDrawable(none);
+
+        if(a==0)
+            arcade.setImageDrawable(red);
+        else if(a==1)
+            arcade.setImageDrawable(blue);
+        else if(a==2)
+            arcade.setImageDrawable(green);
+        else if(a==3)
+            arcade.setImageDrawable(none);
+
+        if(t==0)
+            misc.setImageDrawable(trash);
+        else if(t==1)
+            misc.setImageDrawable(vac);
+        else if(t==2)
+            misc.setImageDrawable(wet);
+        else if(t==3)
+            misc.setImageDrawable(none);
+
+        machine.setMaxWidth(170);
+        machine.setMinimumWidth(170);
+        machine.setMaxHeight(170);
+        machine.setMinimumHeight(170);
+        arcade.setMaxWidth(150);
+        arcade.setMinimumWidth(150);
+        arcade.setMaxHeight(150);
+        arcade.setMinimumHeight(150);
+        misc.setMaxWidth(50);
+        misc.setMinimumWidth(50);
+        misc.setMaxHeight(50);
+        misc.setMinimumHeight(50);
+        ballpit.setMaxWidth(100);
+        ballpit.setMinimumWidth(100);
+        ballpit.setMaxHeight(100);
+        ballpit.setMinimumHeight(100);
     }
 }

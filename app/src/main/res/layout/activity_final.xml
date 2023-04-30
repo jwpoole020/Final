@@ -33,25 +33,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageBG" />
 
-    <ImageView
-        android:id="@+id/imageTable2"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/roundtable" />
-
-    <ImageView
-        android:id="@+id/imagePizza2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageTable2"
-        app:layout_constraintEnd_toEndOf="@+id/imageTable2"
-        app:layout_constraintStart_toStartOf="@+id/imageTable2"
-        app:layout_constraintTop_toTopOf="@+id/imageTable2"
-        app:srcCompat="@drawable/thumbnail_cheesepizza" />
-
     <Button
         android:id="@+id/buttonSO"
         android:layout_width="wrap_content"
@@ -63,61 +44,6 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageTable"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageTable2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/roundtable" />
-
-    <ImageView
-        android:id="@+id/imageTable3"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/roundtable" />
-
-    <ImageView
-        android:id="@+id/imageTable4"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageTable3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/roundtable" />
-
-    <ImageView
-        android:id="@+id/imagePizza3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageTable4"
-        app:layout_constraintEnd_toEndOf="@+id/imageTable4"
-        app:layout_constraintStart_toStartOf="@+id/imageTable4"
-        app:layout_constraintTop_toTopOf="@+id/imageTable4"
-        app:srcCompat="@drawable/thumbnail_cheesepizza" />
-
-    <ImageView
-        android:id="@+id/imagePizza4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageTable3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageTable3"
-        app:layout_constraintTop_toTopOf="@+id/imageTable3"
-        app:srcCompat="@drawable/thumbnail_cheesepizza" />
-
-    <ImageView
-        android:id="@+id/imagePizza"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageTable"
-        app:layout_constraintEnd_toEndOf="@+id/imageTable"
-        app:layout_constraintStart_toStartOf="@+id/imageTable"
-        app:layout_constraintTop_toTopOf="@+id/imageTable"
-        app:srcCompat="@drawable/thumbnail_cheesepizza" />
 
     <ImageView
         android:id="@+id/machine"
@@ -132,8 +58,8 @@
         android:id="@+id/misc"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@+id/imageTable4"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/trashcan" />
@@ -156,5 +82,81 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/machine"
         app:srcCompat="@drawable/bpcircle" />
+
+    <ImageView
+        android:id="@+id/imageTable1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/roundtable" />
+
+    <ImageView
+        android:id="@+id/imageTable2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageTable1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/roundtable" />
+
+    <ImageView
+        android:id="@+id/imageTable3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/roundtable" />
+
+    <ImageView
+        android:id="@+id/imageTable4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageTable3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/roundtable" />
+
+    <ImageView
+        android:id="@+id/imagePizza1"
+        android:layout_width="50sp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageTable1"
+        app:layout_constraintEnd_toEndOf="@+id/imageTable1"
+        app:layout_constraintStart_toStartOf="@+id/imageTable1"
+        app:layout_constraintTop_toTopOf="@+id/imageTable1"
+        app:srcCompat="@drawable/thumbnail_cheesepizza" />
+
+    <ImageView
+        android:id="@+id/imagePizza2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageTable1"
+        app:layout_constraintEnd_toEndOf="@+id/imageTable2"
+        app:layout_constraintStart_toStartOf="@+id/imageTable2"
+        app:layout_constraintTop_toTopOf="@+id/imageTable2"
+        app:srcCompat="@drawable/thumbnail_peppizza" />
+
+    <ImageView
+        android:id="@+id/imagePizza3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageTable3"
+        app:layout_constraintEnd_toEndOf="@+id/imageTable3"
+        app:layout_constraintStart_toStartOf="@+id/imageTable3"
+        app:layout_constraintTop_toTopOf="@+id/imageTable3"
+        app:srcCompat="@drawable/thumbnail_pineapple" />
+
+    <ImageView
+        android:id="@+id/imagePizza4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageTable3"
+        app:layout_constraintEnd_toEndOf="@+id/imageTable4"
+        app:layout_constraintStart_toEndOf="@+id/imageTable2"
+        app:layout_constraintTop_toTopOf="@+id/imageTable4"
+        app:srcCompat="@drawable/thumbnail_loaded" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,11 +13,11 @@ import android.widget.ImageView;
 public class Final extends AppCompatActivity {
 
     ImageView imageBG;
-    ImageView imageTable;
+    ImageView imageTable1;
     ImageView imageTable2;
     ImageView imageTable3;
     ImageView imageTable4;
-    ImageView imagePizza;
+    ImageView imagePizza1;
     ImageView imagePizza2;
     ImageView imagePizza3;
     ImageView imagePizza4;
@@ -43,19 +43,19 @@ public class Final extends AppCompatActivity {
     Drawable pep;
     Drawable loaded;
     Drawable pine;
-    Drawable hoops;
-    Drawable skee;
-    Drawable tar;
-    Drawable trash;
-    Drawable vac;
-    Drawable wet;
-    Drawable cir;
-    Drawable square;
-    Drawable empty;
-    Drawable red;
-    Drawable blue;
-    Drawable green;
-    Drawable none;
+    Drawable hoop;
+    Drawable skeeball;
+    Drawable target;
+    Drawable trashcan;
+    Drawable vacuum;
+    Drawable wetfloor;
+    Drawable circle;
+    Drawable sq;
+    Drawable noball;
+    Drawable reda;
+    Drawable bluea;
+    Drawable greena;
+    Drawable nothing;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,10 +63,14 @@ public class Final extends AppCompatActivity {
         setContentView(R.layout.activity_final);
 
         imageBG=findViewById(R.id.imageBG);
-        imageTable=findViewById(R.id.imageTable);
-        imagePizza=findViewById(R.id.imagePizza);
+        imageTable1=findViewById(R.id.imageTable1);
+        imagePizza1=findViewById(R.id.imagePizza1);
         imageTable2=findViewById(R.id.imageTable2);
         imagePizza2=findViewById(R.id.imagePizza2);
+        imagePizza3=findViewById(R.id.imagePizza3);
+        imageTable3=findViewById(R.id.imageTable3);
+        imageTable4=findViewById(R.id.imageTable4);
+        imagePizza4=findViewById(R.id.imagePizza4);
         machine=findViewById(R.id.machine);
         arcade=findViewById(R.id.arcade);
         ballpit=findViewById(R.id.ballpit);
@@ -83,19 +87,19 @@ public class Final extends AppCompatActivity {
         pep=getDrawable(R.drawable.thumbnail_peppizza);
         loaded=getDrawable(R.drawable.thumbnail_loaded);
         pine=getDrawable(R.drawable.thumbnail_pineapple);
-        hoops=getDrawable(R.drawable.basket);
-        skee=getDrawable(R.drawable.skii);
-        tar=getDrawable(R.drawable.untitled_1);
-        trash=getDrawable(R.drawable.trashcan);
-        vac=getDrawable(R.drawable.vacum);
-        wet=getDrawable(R.drawable.wetfloor);
-        cir=getDrawable(R.drawable.bpcircle);
-        square=getDrawable(R.drawable.bpsquare);
-        empty=getDrawable(R.drawable.bpempty);
-        red=getDrawable(R.drawable.arcred);
-        blue=getDrawable(R.drawable.arcblue);
-        green=getDrawable(R.drawable.arcgreen);
-        none=getDrawable(R.drawable.none);
+        hoop=getDrawable(R.drawable.basket);
+        skeeball=getDrawable(R.drawable.skii);
+        target=getDrawable(R.drawable.untitled_1);
+        trashcan=getDrawable(R.drawable.trashcan);
+        vacuum=getDrawable(R.drawable.vacum);
+        wetfloor=getDrawable(R.drawable.wetfloor);
+        circle=getDrawable(R.drawable.bpcircle);
+        sq=getDrawable(R.drawable.bpsquare);
+        noball=getDrawable(R.drawable.bpempty);
+        reda=getDrawable(R.drawable.arcred);
+        bluea=getDrawable(R.drawable.arcblue);
+        greena=getDrawable(R.drawable.arcgreen);
+        nothing=getDrawable(R.drawable.none);
 
         buttonSO.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,7 +123,11 @@ public class Final extends AppCompatActivity {
         updateBG(floor);
         updateTable(table);
         updatePizza(pizza);
-        updateEnter(mach, ball, ar, mis);
+        updateMachine(mach);
+        updateArcade(ar);
+        updateMisc(mis);
+        updateBall(ball);
+
     }
 
     public void updateBG(int i){
@@ -136,21 +144,21 @@ public class Final extends AppCompatActivity {
 
     public void updateTable(int i){
         if(i==0) {
-            imageTable.setImageDrawable(tableCH);
+            imageTable1.setImageDrawable(tableCH);
             imageTable2.setImageDrawable(tableCH);
             imageTable3.setImageDrawable(tableCH);
             imageTable4.setImageDrawable(tableCH);
         }
         else if(i==1) {
-            imageTable.setImageDrawable(booth);
+            imageTable1.setImageDrawable(booth);
             imageTable2.setImageDrawable(booth);
             imageTable3.setImageDrawable(booth);
             imageTable4.setImageDrawable(booth);
         }
-        imageTable.setMinimumHeight(200);
-        imageTable.setMaxHeight(200);
-        imageTable.setMinimumWidth(200);
-        imageTable.setMaxWidth(200);
+        imageTable1.setMinimumHeight(200);
+        imageTable1.setMaxHeight(200);
+        imageTable1.setMinimumWidth(200);
+        imageTable1.setMaxWidth(200);
         imageTable2.setMinimumHeight(200);
         imageTable2.setMaxHeight(200);
         imageTable2.setMinimumWidth(200);
@@ -167,33 +175,33 @@ public class Final extends AppCompatActivity {
 
     public void updatePizza(int i){
         if(i==0) {
-            imagePizza.setImageDrawable(cheese);
+            imagePizza1.setImageDrawable(cheese);
             imagePizza2.setImageDrawable(cheese);
             imagePizza3.setImageDrawable(cheese);
             imagePizza4.setImageDrawable(cheese);
         }
         else if(i==1) {
-            imagePizza.setImageDrawable(pep);
+            imagePizza1.setImageDrawable(pep);
             imagePizza2.setImageDrawable(pep);
             imagePizza3.setImageDrawable(pep);
             imagePizza4.setImageDrawable(pep);
         }
         else if(i==2) {
-            imagePizza.setImageDrawable(loaded);
+            imagePizza1.setImageDrawable(loaded);
             imagePizza2.setImageDrawable(loaded);
             imagePizza3.setImageDrawable(loaded);
             imagePizza4.setImageDrawable(loaded);
         }
         else if(i==3) {
-            imagePizza.setImageDrawable(pine);
+            imagePizza1.setImageDrawable(pine);
             imagePizza2.setImageDrawable(pine);
             imagePizza3.setImageDrawable(pine);
             imagePizza4.setImageDrawable(pine);
         }
-        imagePizza.setMaxWidth(50);
-        imagePizza.setMinimumWidth(50);
-        imagePizza.setMaxHeight(50);
-        imagePizza.setMinimumHeight(50);
+        imagePizza1.setMaxWidth(50);
+        imagePizza1.setMinimumWidth(50);
+        imagePizza1.setMaxHeight(50);
+        imagePizza1.setMinimumHeight(50);
         imagePizza2.setMaxWidth(50);
         imagePizza2.setMinimumWidth(50);
         imagePizza2.setMaxHeight(50);
@@ -209,58 +217,61 @@ public class Final extends AppCompatActivity {
 
     }
 
-    public void updateEnter(int m, int b, int a, int t){
+    public void updateMachine(int m){
         if(m==0)
-            machine.setImageDrawable(hoops);
+            machine.setImageDrawable(hoop);
         else if(m==1)
-            machine.setImageDrawable(skee);
+            machine.setImageDrawable(skeeball);
         else if(m==2)
-            machine.setImageDrawable(tar);
+            machine.setImageDrawable(target);
         else if(m==3)
-            machine.setImageDrawable(none);
-
-        if(b==0)
-            ballpit.setImageDrawable(cir);
-        else if(b==1)
-            ballpit.setImageDrawable(square);
-        else if(b==2)
-            ballpit.setImageDrawable(empty);
-        else if(b==3)
-            ballpit.setImageDrawable(none);
-
-        if(a==0)
-            arcade.setImageDrawable(red);
-        else if(a==1)
-            arcade.setImageDrawable(blue);
-        else if(a==2)
-            arcade.setImageDrawable(green);
-        else if(a==3)
-            arcade.setImageDrawable(none);
-
-        if(t==0)
-            misc.setImageDrawable(trash);
-        else if(t==1)
-            misc.setImageDrawable(vac);
-        else if(t==2)
-            misc.setImageDrawable(wet);
-        else if(t==3)
-            misc.setImageDrawable(none);
-
+            machine.setImageDrawable(nothing);
         machine.setMaxWidth(170);
         machine.setMinimumWidth(170);
         machine.setMaxHeight(170);
         machine.setMinimumHeight(170);
+    }
+    public void updateArcade(int a){
+        if(a==0)
+            arcade.setImageDrawable(reda);
+        else if(a==1)
+            arcade.setImageDrawable(bluea);
+        else if(a==2)
+            arcade.setImageDrawable(greena);
+        else if(a==3)
+            arcade.setImageDrawable(nothing);
         arcade.setMaxWidth(150);
         arcade.setMinimumWidth(150);
         arcade.setMaxHeight(150);
         arcade.setMinimumHeight(150);
+    }
+    public void updateMisc(int t){
+        if(t==0)
+            misc.setImageDrawable(trashcan);
+        else if(t==1)
+            misc.setImageDrawable(vacuum);
+        else if(t==2)
+            misc.setImageDrawable(wetfloor);
+        else if(t==3)
+            misc.setImageDrawable(nothing);
         misc.setMaxWidth(50);
         misc.setMinimumWidth(50);
         misc.setMaxHeight(50);
         misc.setMinimumHeight(50);
+    }
+    public void updateBall(int b){
+        if(b==0)
+            ballpit.setImageDrawable(circle);
+        else if(b==1)
+            ballpit.setImageDrawable(sq);
+        else if(b==2)
+            ballpit.setImageDrawable(noball);
+        else if(b==3)
+            ballpit.setImageDrawable(nothing);
         ballpit.setMaxWidth(100);
         ballpit.setMinimumWidth(100);
         ballpit.setMaxHeight(100);
         ballpit.setMinimumHeight(100);
+
     }
 }

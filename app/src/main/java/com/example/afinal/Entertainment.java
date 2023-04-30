@@ -53,7 +53,7 @@ public class Entertainment extends AppCompatActivity {
     Drawable blue;
     Drawable green;
     Drawable none;
-    Button button;
+    Button button2;
     int machine=0;
     int mis=0;
     int bp=0;
@@ -88,7 +88,7 @@ public class Entertainment extends AppCompatActivity {
         radioBlue=findViewById(R.id.radioBlue);
         radioGreen=findViewById(R.id.radioGreen);
         radioNone4=findViewById(R.id.radioNone4);
-        button=findViewById(R.id.button2);
+        button2=findViewById(R.id.button2);
 
         hoops=getDrawable(R.drawable.basket);
         skee=getDrawable(R.drawable.skii);
@@ -208,7 +208,7 @@ public class Entertainment extends AppCompatActivity {
             }
         });
 
-        button.setOnClickListener(new View.OnClickListener() {
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), Final.class);
